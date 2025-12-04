@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Słodkości u Marzusi - Torty, Ciastka, Desery na Zamówienie</title>
+    <title>Słodkości u Marzusi - Torty, Ciasta, Desery na Zamówienie | Jawor</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Słodkości u Marzusi - domowe torty, ciasta i desery na zamówienie w Jaworze. Serniki, szarlotki, tiramisu, babeczki i wiele więcej. Czas realizacji 1-3 dni. Odbiór osobisty lub dostawa.">
+    <meta name="keywords"
+        content="torty Jawor, ciasta na zamówienie, desery Jawor, sernik, szarlotka, tiramisu, słodkości, cukiernia Jawor, torty urodzinowe, torty weselne, Marzena Radomska">
+    <meta name="author" content="Marzena Radomska - Słodkości u Marzusi">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Polish">
+    <meta name="geo.region" content="PL-DS">
+    <meta name="geo.placename" content="Jawor">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Słodkości u Marzusi - Torty, Ciasta, Desery na Zamówienie">
+    <meta property="og:description"
+        content="Domowe torty, ciasta i desery na zamówienie w Jaworze. Serniki, szarlotki, tiramisu i wiele więcej. Zamów już dziś!">
+    <meta property="og:image" content="img/tort.jpg">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Słodkości u Marzusi">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Słodkości u Marzusi - Torty, Ciasta, Desery">
+    <meta name="twitter:description" content="Domowe torty, ciasta i desery na zamówienie w Jaworze. Zamów już dziś!">
+    <meta name="twitter:image" content="img/tort.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>">
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Słodkości u Marzusi",
+        "description": "Domowe torty, ciasta i desery na zamówienie",
+        "image": "img/tort.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Parkowa 2a/7",
+            "addressLocality": "Jawor",
+            "postalCode": "59-400",
+            "addressRegion": "dolnośląskie",
+            "addressCountry": "PL"
+        },
+        "telephone": "+48698042407",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su",
+        "sameAs": [
+            "https://www.facebook.com/marzena.radomska.5",
+            "https://www.instagram.com/marzusislodkosci/"
+        ]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -28,7 +85,7 @@
             font-size: 2.8rem;
             color: #5c3d4a;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
         }
 
         header p {
@@ -65,7 +122,7 @@
             background-color: #fff;
             border-radius: 15px;
             padding: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
@@ -87,13 +144,13 @@
             background: #fff;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .gallery-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .gallery-item .image-placeholder {
@@ -105,12 +162,29 @@
             font-size: 4rem;
         }
 
-        .gallery-item:nth-child(1) .image-placeholder { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
-        .gallery-item:nth-child(2) .image-placeholder { background: linear-gradient(135deg, #f8b4c4 0%, #ffd1dc 100%); }
-        .gallery-item:nth-child(3) .image-placeholder { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
-        .gallery-item:nth-child(4) .image-placeholder { background: linear-gradient(135deg, #ffeaa7 0%, #dfe6e9 100%); }
-        .gallery-item:nth-child(5) .image-placeholder { background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); }
-        .gallery-item:nth-child(6) .image-placeholder { background: linear-gradient(135deg, #a29bfe 0%, #fd79a8 100%); }
+        .gallery-item:nth-child(1) .image-placeholder {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        .gallery-item:nth-child(2) .image-placeholder {
+            background: linear-gradient(135deg, #f8b4c4 0%, #ffd1dc 100%);
+        }
+
+        .gallery-item:nth-child(3) .image-placeholder {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .gallery-item:nth-child(4) .image-placeholder {
+            background: linear-gradient(135deg, #ffeaa7 0%, #dfe6e9 100%);
+        }
+
+        .gallery-item:nth-child(5) .image-placeholder {
+            background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+        }
+
+        .gallery-item:nth-child(6) .image-placeholder {
+            background: linear-gradient(135deg, #a29bfe 0%, #fd79a8 100%);
+        }
 
         .gallery-item h3 {
             padding: 15px;
@@ -171,8 +245,94 @@
             background-color: #5c3d4a;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px 20px;
             font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer-business-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-section h4 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #f8b4c4;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-section p {
+            margin-bottom: 8px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .footer-section p strong {
+            color: #ffd1dc;
+        }
+
+        .footer-copyright {
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .social-link.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .social-link.facebook:hover {
+            background: #1877F2;
+        }
+
+        .social-link.instagram:hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .footer-section a {
+            color: #ffd1dc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
@@ -188,9 +348,145 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: linear-gradient(135deg, #fff9f5 0%, #ffecd2 100%);
+            padding: 60px 20px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card-header {
+            background: linear-gradient(135deg, #f8b4c4 0%, #ffd1dc 100%);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .pricing-card-header h3 {
+            color: #5c3d4a;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .pricing-card-header .emoji {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .pricing-card-body {
+            padding: 25px;
+        }
+
+        .pricing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .pricing-item:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-item-name {
+            color: #5c3d4a;
+            font-weight: 500;
+        }
+
+        .pricing-item-details {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .pricing-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background-color: #fff0f5;
+            color: #5c3d4a;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-bottom: 2px solid #f8b4c4;
+        }
+
+        .pricing-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table tr:hover {
+            background-color: #fff9f9;
+        }
+
+        .pricing-table .col-lp {
+            width: 40px;
+            text-align: center;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .pricing-table .col-price {
+            text-align: right;
+            white-space: nowrap;
+            font-weight: 600;
+            color: #e17055;
+        }
+
+        .pricing-note {
+            background: #fff9f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .pricing-note strong {
+            color: #5c3d4a;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>🧁 Słodkości u Marzusi</h1>
@@ -200,7 +496,9 @@
     <section>
         <div class="about">
             <h2>O mnie</h2>
-            <p>Witaj! Jestem Marzusia i od lat tworzę pyszne słodkości na każdą okazję. Specjalizuję się w tortach urodzinowych, weselnych, ciastkach i deserach. Wszystkie wyroby przygotowuję ze świeżych, wysokiej jakości składników. Zapraszam do składania zamówień!</p>
+            <p>Witaj! Jestem Marzusia i <strong>od 25 lat</strong> tworzę pyszne słodkości na każdą okazję. Specjalizuję
+                się w tortach urodzinowych, weselnych, ciastkach i deserach. Wszystkie wyroby przygotowuję ze świeżych,
+                wysokiej jakości składników. Zapraszam do składania zamówień!</p>
         </div>
     </section>
 
@@ -208,28 +506,410 @@
         <h2>Moje Słodkości</h2>
         <div class="gallery">
             <div class="gallery-item">
-                <div class="image-placeholder">🎂</div>
-                <h3>Torty Urodzinowe</h3>
+                <img src="img/tort.jpg" alt="Torty" style="width: 100%; height: 250px; object-fit: cover;">
+                <h3>Torty</h3>
             </div>
             <div class="gallery-item">
-                <div class="image-placeholder">💒</div>
-                <h3>Torty Weselne</h3>
+                <img src="img/ciasto.jpg" alt="Ciasta" style="width: 100%; height: 250px; object-fit: cover;">
+                <h3>Ciasta</h3>
             </div>
             <div class="gallery-item">
-                <div class="image-placeholder">🧁</div>
-                <h3>Babeczki i Muffiny</h3>
+                <img src="img/deserki.jpg" alt="Deserki" style="width: 100%; height: 250px; object-fit: cover;">
+                <h3>Deserki</h3>
             </div>
             <div class="gallery-item">
-                <div class="image-placeholder">🍪</div>
-                <h3>Ciastka</h3>
+                <img src="img/deserki2.jpg" alt="Słodkie stoły" style="width: 100%; height: 250px; object-fit: cover;">
+                <h3>Słodkie stoły</h3>
             </div>
-            <div class="gallery-item">
-                <div class="image-placeholder">🍰</div>
-                <h3>Serniki i Tarty</h3>
+        </div>
+    </section>
+
+    <!-- Cennik -->
+    <section class="pricing-section">
+        <h2>Cennik</h2>
+        <div class="pricing-grid">
+            <!-- Deserki -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <span class="emoji">🍮</span>
+                    <h3>Deserki</h3>
+                    <p style="margin: 0; font-size: 0.9rem; opacity: 0.8; color: #5c3d4a;">Pojedyncze porcje</p>
+                </div>
+                <div class="pricing-card-body" style="padding: 0;">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th class="col-lp">Lp.</th>
+                                <th>Nazwa</th>
+                                <th class="col-price">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-lp">1.</td>
+                                <td>Sernik z galaretką</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">2.</td>
+                                <td>Serniczek krówkowy</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">3.</td>
+                                <td>Szarlotka</td>
+                                <td class="col-price">8 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">4.</td>
+                                <td>Krem z białej czekolady z musem malinowym</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">5.</td>
+                                <td>Kinder Bueno</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">6.</td>
+                                <td>Kinder Czekolada</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">7.</td>
+                                <td>Kinder Country</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">8.</td>
+                                <td>Snickers</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">9.</td>
+                                <td>Oreo</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">10.</td>
+                                <td>Rafaello</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">11.</td>
+                                <td>Pianka malinowa</td>
+                                <td class="col-price">7 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">12.</td>
+                                <td>Pianka waniliowa z galaretką</td>
+                                <td class="col-price">8 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">13.</td>
+                                <td>Ptasie mleczko z owocami</td>
+                                <td class="col-price">9 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">14.</td>
+                                <td>Deser jogurtowy z galaretką i borówkami</td>
+                                <td class="col-price">9 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">15.</td>
+                                <td>Kraina Lodu</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">16.</td>
+                                <td>Panna Cotta Mango</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">17.</td>
+                                <td>Galaretka „Arbuz”</td>
+                                <td class="col-price">7 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">18.</td>
+                                <td>Truskawkowy Przekładaniec</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">19.</td>
+                                <td>Cytrynowy Deser</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">20.</td>
+                                <td>Malinowa Chmurka</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">21.</td>
+                                <td>Deser czekoladowy z wiśniami</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">22.</td>
+                                <td>Leśny Mech</td>
+                                <td class="col-price">9 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">23.</td>
+                                <td>Kopiec Kreta</td>
+                                <td class="col-price">8 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">24.</td>
+                                <td>Tiramisu</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">25.</td>
+                                <td>Krówka</td>
+                                <td class="col-price">10 zł</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pricing-note" style="margin: 20px;">
+                        <strong>Pojemność deserków:</strong> 180 - 280 ml
+                    </div>
+                </div>
             </div>
-            <div class="gallery-item">
-                <div class="image-placeholder">🍮</div>
-                <h3>Desery</h3>
+
+            <!-- Ciasta i Wypieki -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <span class="emoji">🍰</span>
+                    <h3>Ciasta i Wypieki</h3>
+                    <p style="margin: 0; font-size: 0.9rem; opacity: 0.8; color: #5c3d4a;">Całe blachy / Zestawy</p>
+                </div>
+                <div class="pricing-card-body" style="padding: 0;">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th class="col-lp">Lp.</th>
+                                <th>Nazwa</th>
+                                <th class="col-price">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-lp">1.</td>
+                                <td>Malinowa Chmurka</td>
+                                <td class="col-price">170 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">2.</td>
+                                <td>Rurociąg</td>
+                                <td class="col-price">150 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">3.</td>
+                                <td>Sernik z brzoskwiniami</td>
+                                <td class="col-price">180 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">4.</td>
+                                <td>Sernik z pianą</td>
+                                <td class="col-price">160 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">5.</td>
+                                <td>Sernik Królewski</td>
+                                <td class="col-price">170 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">6.</td>
+                                <td>Miodownik</td>
+                                <td class="col-price">130 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">7.</td>
+                                <td>Królewiec</td>
+                                <td class="col-price">140 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">8.</td>
+                                <td>Kubusiowiec</td>
+                                <td class="col-price">130 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">9.</td>
+                                <td>Rafaello</td>
+                                <td class="col-price">150 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">10.</td>
+                                <td>Pleśniak</td>
+                                <td class="col-price">150 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">11.</td>
+                                <td>3BIT</td>
+                                <td class="col-price">180 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">12.</td>
+                                <td>Kinder Bueno</td>
+                                <td class="col-price">200 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">13.</td>
+                                <td>Cycki Murzynki</td>
+                                <td class="col-price">160 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">14.</td>
+                                <td>Makowiec zwijany</td>
+                                <td class="col-price">70 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">15.</td>
+                                <td>Makowiec</td>
+                                <td class="col-price">100 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">16.</td>
+                                <td>Pychotka</td>
+                                <td class="col-price">150 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">17.</td>
+                                <td>Snickers</td>
+                                <td class="col-price">190 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">18.</td>
+                                <td>Jabłecznik z budyniem</td>
+                                <td class="col-price">140 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">19.</td>
+                                <td>Szarlotka</td>
+                                <td class="col-price">130 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">20.</td>
+                                <td>Tiramisu</td>
+                                <td class="col-price">160 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">21.</td>
+                                <td>Wuzetka (W-Z)</td>
+                                <td class="col-price">150 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">22.</td>
+                                <td>Karpatka</td>
+                                <td class="col-price">140 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">23.</td>
+                                <td>Kokosanki</td>
+                                <td class="col-price">120 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">24.</td>
+                                <td>Kopiec Kreta</td>
+                                <td class="col-price">140 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">25.</td>
+                                <td>Przekładaniec</td>
+                                <td class="col-price">180 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">26.</td>
+                                <td>Krówka</td>
+                                <td class="col-price">160 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">27.</td>
+                                <td>Lion</td>
+                                <td class="col-price">180 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">28.</td>
+                                <td>Mleczna Kanapka</td>
+                                <td class="col-price">160 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">29.</td>
+                                <td>Babka 4-kolorowa</td>
+                                <td class="col-price">100 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">30.</td>
+                                <td>Babka piaskowa/czekoladowa</td>
+                                <td class="col-price">80 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">31.</td>
+                                <td>Murzynek</td>
+                                <td class="col-price">80 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">32.</td>
+                                <td>Leśny Mech</td>
+                                <td class="col-price">140 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">33.</td>
+                                <td>Śmietanowiec</td>
+                                <td class="col-price">120 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">34.</td>
+                                <td>Torcik Oreo</td>
+                                <td class="col-price">180 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">35.</td>
+                                <td>Muffinki (10 sztuk) + ozdoby 2 zł/szt</td>
+                                <td class="col-price">50 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">36.</td>
+                                <td>Kruche ciastka cynamonowe (30 sztuk)</td>
+                                <td class="col-price">60 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="col-lp">37.</td>
+                                <td>Deserki (różne rodzaje, pojemność 180-280ml)</td>
+                                <td class="col-price">7 zł - 10 zł</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pricing-note" style="margin: 20px;">
+                        Ciasta pieczone są w blachach o wymiarach <strong>24x30 cm</strong> lub <strong>20x30
+                            cm</strong>.<br>
+                        Możliwość zamówienia połowy blachy.<br><br>
+                        <strong>Torty:</strong> Wykonuję torty o średnicy <strong>26 cm</strong> lub <strong>28
+                            cm</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informacje o zamówieniach -->
+    <section>
+        <div class="about" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+            <h2>Informacje o zamówieniach</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 20px;">
+                <div style="text-align: center;">
+                    <span style="font-size: 3rem;">⏰</span>
+                    <h3 style="color: #5c3d4a; margin: 10px 0;">Czas oczekiwania</h3>
+                    <p style="color: #666;">Od <strong>1 do 3 dni</strong><br>w zależności od zamówienia</p>
+                </div>
+                <div style="text-align: center;">
+                    <span style="font-size: 3rem;">🚗</span>
+                    <h3 style="color: #5c3d4a; margin: 10px 0;">Odbiór / Dostawa</h3>
+                    <p style="color: #666;"><strong>Odbiór osobisty</strong><br>lub <strong>dostawa na terenie
+                            Jawora</strong></p>
+                </div>
             </div>
         </div>
     </section>
@@ -242,30 +922,68 @@
                 <div class="contact-item">
                     <span class="icon">📞</span>
                     <p>
-                        <strong>Telefon</strong>
-                        <span>+48 123 456 789</span>
-                    </p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon">📧</span>
-                    <p>
-                        <strong>E-mail</strong>
-                        <span>slodkosciumarzusi@email.com</span>
+                        <strong>Telefon / WhatsApp</strong>
+                        <span>+48 698 042 407</span>
                     </p>
                 </div>
                 <div class="contact-item">
                     <span class="icon">📍</span>
                     <p>
                         <strong>Lokalizacja</strong>
-                        <span>Warszawa i okolice</span>
+                        <span>Jawor, woj. dolnośląskie</span>
                     </p>
                 </div>
+            </div>
+            <div class="social-links" style="justify-content: center; margin-top: 25px;">
+                <a href="https://wa.me/48698042407" class="social-link whatsapp" target="_blank" rel="noopener">
+                    💬 WhatsApp
+                </a>
+                <a href="https://www.facebook.com/marzena.radomska.5" class="social-link facebook" target="_blank"
+                    rel="noopener">
+                    📘 Facebook
+                </a>
+                <a href="https://www.instagram.com/marzusislodkosci/" class="social-link instagram" target="_blank"
+                    rel="noopener">
+                    📸 Instagram
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Słodkości u Marzusi. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer-content">
+            <div class="footer-business-info">
+                <div class="footer-section">
+                    <h4>Dane firmy</h4>
+                    <p><strong>Firma:</strong> MARZENA RADOMSKA</p>
+                    <p><strong>Imię i nazwisko:</strong> Marzena Radomska</p>
+                    <p><strong>NIP:</strong> 6951343955</p>
+                    <p><strong>REGON:</strong> 541174793</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Adres</h4>
+                    <p>ul. Parkowa 2a/7</p>
+                    <p>59-400 Jawor</p>
+                    <p>woj. dolnośląskie</p>
+                    <p>pow. jaworski</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p><strong>Tel./WhatsApp:</strong> <a href="tel:+48698042407">+48 698 042 407</a></p>
+                    <p><a href="https://www.facebook.com/marzena.radomska.5" target="_blank" rel="noopener">📘
+                            Facebook</a></p>
+                    <p><a href="https://www.instagram.com/marzusislodkosci/" target="_blank" rel="noopener">📸
+                            Instagram</a></p>
+                    <p><a href="https://wa.me/48698042407" target="_blank" rel="noopener">💬 WhatsApp</a></p>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Słodkości u Marzusi - MARZENA RADOMSKA. Wszelkie prawa zastrzeżone.
+            </p>
+            <p class="footer-copyright" style="margin-top: 10px;">Strona stworzona przez <a
+                    href="https://www.krystianfrydryk.pl/" target="_blank" rel="noopener"
+                    style="color: #f8b4c4;">Krystian Frydryk</a></p>
+        </div>
     </footer>
 </body>
+
 </html>
