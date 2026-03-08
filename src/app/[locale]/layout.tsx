@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { routing } from '../../i18n/routing'
 import '../globals.css'
 
@@ -34,6 +35,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   return (
     <html lang={locale}>
+      <head>
+        <GoogleAnalytics gaId="G-EVC5B8JNT8" />
+      </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
