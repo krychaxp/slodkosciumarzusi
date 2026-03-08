@@ -1,11 +1,9 @@
-import type { I18nContent } from '../data/content'
+import { useTranslations } from 'next-intl'
 
-interface Props {
-  t: I18nContent
-}
+export default function Footer() {
+  const t = useTranslations('HomePage')
+  const addressLines = t.raw('footer.addressLines') as string[]
 
-export default function Footer({ t }: Props) {
-  const { footer } = t
   return (
     <footer className="bg-[#5c3d4a] text-white text-center pt-10 pb-5 px-5 text-[0.9rem]">
       <div className="max-w-[1000px] mx-auto">
@@ -14,21 +12,21 @@ export default function Footer({ t }: Props) {
           style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}
         >
           <div>
-            <h4 className="text-[1rem] mb-4 text-[#f8b4c4] uppercase tracking-wider">{footer.companyHeading}</h4>
-            <p className="mb-2 opacity-90"><strong className="text-[#ffd1dc]">Firma:</strong> MARZENA RADOMSKA</p>
-            <p className="mb-2 opacity-90"><strong className="text-[#ffd1dc]">NIP:</strong> 6951343955</p>
-            <p className="mb-2 opacity-90"><strong className="text-[#ffd1dc]">REGON:</strong> 541174793</p>
+            <h4 className="text-[1rem] mb-4 text-[#f8b4c4] uppercase tracking-wider">{t('footer.companyHeading')}</h4>
+            <p className="mb-2 opacity-90"><strong className="text-[#ffd1dc]">{t('footer.companyLabel')}:</strong> MARZENA RADOMSKA</p>
+            <p className="mb-2 opacity-90"><strong className="text-[#ffd1dc]">{t('footer.taxIdLabel')}:</strong> 6951343955</p>
+            <p className="mb-2 opacity-90"><strong className="text-[#ffd1dc]">{t('footer.regonLabel')}:</strong> 541174793</p>
           </div>
           <div>
-            <h4 className="text-[1rem] mb-4 text-[#f8b4c4] uppercase tracking-wider">{footer.addressHeading}</h4>
-            {footer.addressLines.map((line, i) => (
+            <h4 className="text-[1rem] mb-4 text-[#f8b4c4] uppercase tracking-wider">{t('footer.addressHeading')}</h4>
+            {addressLines.map((line, i) => (
               <p key={i} className="mb-2 opacity-90">{line}</p>
             ))}
           </div>
           <div>
-            <h4 className="text-[1rem] mb-4 text-[#f8b4c4] uppercase tracking-wider">{footer.contactHeading}</h4>
+            <h4 className="text-[1rem] mb-4 text-[#f8b4c4] uppercase tracking-wider">{t('footer.contactHeading')}</h4>
             <p className="mb-2 opacity-90">
-              <strong className="text-[#ffd1dc]">Tel./WhatsApp:</strong>{' '}
+              <strong className="text-[#ffd1dc]">{t('footer.phoneLabel')}:</strong>{' '}
               <a href="tel:+48698042407" className="text-[#ffd1dc] no-underline hover:text-white hover:underline transition-colors">
                 +48 698 042 407
               </a>
@@ -54,9 +52,9 @@ export default function Footer({ t }: Props) {
           </div>
         </div>
 
-        <p className="opacity-70 text-[0.85rem]">{footer.copyright}</p>
+        <p className="opacity-70 text-[0.85rem]">{t('footer.copyright')}</p>
         <p className="opacity-70 text-[0.85rem] mt-2.5">
-          {footer.creditPrefix}{' '}
+          {t('footer.creditPrefix')}{' '}
           <a
             href="https://www.krystianfrydryk.pl/"
             target="_blank"

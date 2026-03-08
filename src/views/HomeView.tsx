@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import Header from '../components/Header'
 import About from '../components/About'
@@ -7,27 +6,10 @@ import PricingSection from '../components/PricingSection'
 import OrderInfo from '../components/OrderInfo'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-import { i18n } from '../data/content'
-import type { Lang } from '../data/content'
+import { useTranslations } from 'next-intl'
 
-interface Props {
-  lang: Lang
-}
-
-export default function Home({ lang }: Props) {
-  const t = i18n[lang]
-
-  useEffect(() => {
-    document.title = t.meta.title
-    document.documentElement.lang = t.htmlLang
-    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]')
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta')
-      metaDesc.name = 'description'
-      document.head.appendChild(metaDesc)
-    }
-    metaDesc.content = t.meta.description
-  }, [lang, t])
+export default function HomeView() {
+  const t = useTranslations('HomePage')
 
   return (
     <div
@@ -37,28 +19,28 @@ export default function Home({ lang }: Props) {
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
     >
-      <LanguageSwitcher lang={lang} t={t} />
-      <Header t={t} />
+      <LanguageSwitcher />
+      <Header title={t('brand')} />
 
       <section className="py-[50px] px-5 max-w-[1200px] mx-auto">
-        <About t={t} />
+        <About />
       </section>
 
       <section className="py-[50px] px-5 max-w-[1200px] mx-auto">
-        <Gallery lang={lang} t={t} />
+        <Gallery />
       </section>
 
-      <PricingSection t={t} />
+      <PricingSection />
 
       <section className="py-[50px] px-5 max-w-[1200px] mx-auto">
-        <OrderInfo t={t} />
+        <OrderInfo />
       </section>
 
       <section className="py-[50px] px-5 max-w-[1200px] mx-auto">
-        <Contact t={t} />
+        <Contact />
       </section>
 
-      <Footer t={t} />
+      <Footer />
     </div>
   )
 }

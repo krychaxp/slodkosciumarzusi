@@ -1,0 +1,145 @@
+{
+  "HomePage": {
+    "brand": "🧁 Słodkości u Marzusi",
+    "langBar": "🌐 Język:",
+    "languageNames": {
+      "pl": "🇵🇱 Polski",
+      "de": "🇩🇪 Deutsch"
+    },
+    "header": {
+      "subtitle": "Domowe torty, ciastka i desery na zamówienie. Każdą słodkość przygotowuję z miłością i pasją!"
+    },
+    "about": {
+      "heading": "O mnie",
+      "imgAlt": "Marzena Radomska - Słodkości u Marzusi",
+      "text": "Witaj! Jestem Marzusia i od <strong>25 lat</strong> tworzę pyszne słodkości na każdą okazję. Specjalizuję się w tortach urodzinowych, weselnych, ciastkach i deserach. Wszystkie wyroby przygotowuję ze świeżych, wysokiej jakości składników. Zapraszam do składania zamówień!"
+    },
+    "gallery": {
+      "heading": "Moje Słodkości",
+      "items": [
+        {"src": "/img/tort.jpg", "alt": "Torty", "label": "Torty"},
+        {"src": "/img/tort1.jpg", "alt": "Torty Urodzinowe", "label": "Torty Urodzinowe"},
+        {"src": "/img/ciasto.jpg", "alt": "Ciasta", "label": "Ciasta"},
+        {"src": "/img/ciasto2.jpg", "alt": "Serniki i inne", "label": "Serniki i inne"},
+        {"src": "/img/ciasto3.jpg", "alt": "Domowe Wypieki", "label": "Domowe Wypieki"},
+        {"src": "/img/ciasteczka.jpg", "alt": "Ciasteczka", "label": "Ciasteczka"},
+        {"src": "/img/deserki.jpg", "alt": "Deserki", "label": "Deserki"},
+        {"src": "/img/deserki2.jpg", "alt": "Słodkie stoły", "label": "Słodkie stoły"}
+      ]
+    },
+    "pricing": {
+      "heading": "Cennik",
+      "colNr": "Lp.",
+      "colName": "Nazwa",
+      "colPrice": "Cena",
+      "dessertsHeading": "Deserki",
+      "dessertsSubtitle": "Pojedyncze porcje",
+      "dessertsNoteLabel": "Pojemność deserków",
+      "dessertsNoteValue": "180 - 280 ml",
+      "cakesHeading": "Ciasta i Wypieki",
+      "cakesSubtitle": "Całe blachy / Zestawy",
+      "cakesNote": "Ciasta pieczone są w blachach o wymiarach 24x30 cm lub 20x30 cm. Możliwość zamówienia połowy blachy.",
+      "tortesNoteLabel": "Torty",
+      "tortesNoteValue": "Wykonuję torty o średnicy 26 cm lub 28 cm.",
+      "dessertItems": [
+        {"name": "Sernik z galaretką", "price": "10 zł"},
+        {"name": "Serniczek krówkowy", "price": "10 zł"},
+        {"name": "Szarlotka", "price": "8 zł"},
+        {"name": "Krem z białej czekolady z musem malinowym", "price": "10 zł"},
+        {"name": "Kinder Bueno", "price": "10 zł"},
+        {"name": "Kinder Czekolada", "price": "10 zł"},
+        {"name": "Kinder Country", "price": "10 zł"},
+        {"name": "Snickers", "price": "10 zł"},
+        {"name": "Oreo", "price": "10 zł"},
+        {"name": "Rafaello", "price": "10 zł"},
+        {"name": "Pianka malinowa", "price": "7 zł"},
+        {"name": "Pianka waniliowa z galaretką", "price": "8 zł"},
+        {"name": "Ptasie mleczko z owocami", "price": "9 zł"},
+        {"name": "Deser jogurtowy z galaretką i borówkami", "price": "9 zł"},
+        {"name": "Kraina Lodu", "price": "10 zł"},
+        {"name": "Panna Cotta Mango", "price": "10 zł"},
+        {"name": "Galaretka „Arbuz”", "price": "7 zł"},
+        {"name": "Truskawkowy Przekładaniec", "price": "10 zł"},
+        {"name": "Cytrynowy Deser", "price": "10 zł"},
+        {"name": "Malinowa Chmurka", "price": "10 zł"},
+        {"name": "Deser czekoladowy z wiśniami", "price": "10 zł"},
+        {"name": "Leśny Mech", "price": "9 zł"},
+        {"name": "Kopiec Kreta", "price": "8 zł"},
+        {"name": "Tiramisu", "price": "10 zł"},
+        {"name": "Krówka", "price": "10 zł"}
+      ],
+      "cakeItems": [
+        {"name": "Malinowa Chmurka", "price": "170 zł"},
+        {"name": "Rurociąg", "price": "150 zł"},
+        {"name": "Sernik z brzoskwiniami", "price": "180 zł"},
+        {"name": "Sernik z pianą", "price": "160 zł"},
+        {"name": "Sernik Królewski", "price": "170 zł"},
+        {"name": "Miodownik", "price": "130 zł"},
+        {"name": "Królewiec", "price": "140 zł"},
+        {"name": "Kubusiowiec", "price": "130 zł"},
+        {"name": "Rafaello", "price": "150 zł"},
+        {"name": "Pleśniak", "price": "150 zł"},
+        {"name": "3BIT", "price": "180 zł"},
+        {"name": "Kinder Bueno", "price": "200 zł"},
+        {"name": "Cycki Murzynki", "price": "160 zł"},
+        {"name": "Makowiec zwijany", "price": "70 zł"},
+        {"name": "Makowiec", "price": "100 zł"},
+        {"name": "Pychotka", "price": "150 zł"},
+        {"name": "Snickers", "price": "190 zł"},
+        {"name": "Jabłecznik z budyniem", "price": "140 zł"},
+        {"name": "Szarlotka", "price": "130 zł"},
+        {"name": "Tiramisu", "price": "160 zł"},
+        {"name": "Wuzetka (W-Z)", "price": "150 zł"},
+        {"name": "Karpatka", "price": "140 zł"},
+        {"name": "Kokosanki", "price": "120 zł"},
+        {"name": "Kopiec Kreta", "price": "140 zł"},
+        {"name": "Przekładaniec", "price": "180 zł"},
+        {"name": "Krówka", "price": "160 zł"},
+        {"name": "Lion", "price": "180 zł"},
+        {"name": "Mleczna Kanapka", "price": "160 zł"},
+        {"name": "Babka 4-kolorowa", "price": "100 zł"},
+        {"name": "Babka piaskowa/czekoladowa", "price": "80 zł"},
+        {"name": "Murzynek", "price": "80 zł"},
+        {"name": "Leśny Mech", "price": "140 zł"},
+        {"name": "Śmietanowiec", "price": "120 zł"},
+        {"name": "Torcik Oreo", "price": "180 zł"},
+        {"name": "Muffinki (10 sztuk) + ozdoby 2 zł/szt", "price": "50 zł"},
+        {"name": "Kruche ciastka cynamonowe (30 sztuk)", "price": "60 zł"},
+        {"name": "Deserki (różne rodzaje, pojemność 180-280ml)", "price": "7 zł - 10 zł"}
+      ]
+    },
+    "orderInfo": {
+      "heading": "Informacje o zamówieniach",
+      "waitHeading": "Czas oczekiwania",
+      "waitText": "Od <strong>1 do 3 dni</strong> w zależności od zamówienia",
+      "deliveryHeading": "Odbiór / Dostawa",
+      "deliveryText": "Odbiór osobisty lub dostawa na terenie Jawora"
+    },
+    "contact": {
+      "heading": "Kontakt",
+      "subtitle": "Chętnie odpowiem na wszystkie pytania i przyjmę zamówienie!",
+      "phoneLabel": "Telefon / WhatsApp",
+      "locationLabel": "Lokalizacja",
+      "locationValue": "Jawor, woj. dolnośląskie",
+      "whatsappLabel": "WhatsApp",
+      "facebookLabel": "Facebook",
+      "instagramLabel": "Instagram"
+    },
+    "footer": {
+      "companyHeading": "Dane firmy",
+      "companyLabel": "Firma",
+      "taxIdLabel": "NIP",
+      "regonLabel": "REGON",
+      "addressHeading": "Adres",
+      "contactHeading": "Kontakt",
+      "phoneLabel": "Tel./WhatsApp",
+      "addressLines": ["59-400 Jawor", "woj. dolnośląskie", "pow. jaworski"],
+      "copyright": "© 2025 Słodkości u Marzusi - MARZENA RADOMSKA. Wszelkie prawa zastrzeżone.",
+      "creditPrefix": "Strona stworzona przez"
+    }
+  },
+  "Metadata": {
+    "title": "Słodkości u Marzusi - Torty, Ciasta, Desery na Zamówienie | Jawor",
+    "description": "Słodkości u Marzusi - domowe torty, ciasta i desery na zamówienie w Jaworze. Serniki, szarlotki, tiramisu, babeczki i wiele więcej."
+  }
+}

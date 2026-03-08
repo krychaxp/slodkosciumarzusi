@@ -1,28 +1,25 @@
 # Słodkości u Marzusi
 
-Prosta strona internetowa dla domowej cukierni oferującej torty, ciastka i desery na zamówienie.
+Strona internetowa domowej cukierni napisana w Next.js (App Router) i React.
 
 ## Funkcje
 
-- Sekcja powitalna z nazwą firmy i opisem
-- Sekcja "O mnie" przedstawiająca właścicielkę
-- Galeria produktów (torty urodzinowe, torty weselne, babeczki, ciastka, serniki, desery)
-- Sekcja kontaktowa z telefonem, e-mailem i lokalizacją
-- Responsywny design dostosowany do urządzeń mobilnych
+- Polska i niemiecka wersja językowa (`/` oraz `/de`)
+- Sekcje: o mnie, galeria, cennik, informacje o zamówieniach, kontakt
+- Responsywny interfejs oparty o Tailwind CSS v4
 
-## Uruchomienie
-
-Otwórz plik `index.html` w przeglądarce lub uruchom lokalny serwer:
+## Uruchomienie lokalne
 
 ```bash
-python3 -m http.server 8080
+pnpm install
+pnpm dev
 ```
 
-Następnie otwórz http://localhost:8080 w przeglądarce.
+Strona będzie dostępna pod adresem `http://localhost:3000`.
 
-## Personalizacja
+## Build produkcyjny
 
-Aby dostosować stronę do swoich potrzeb, edytuj plik `index.html`:
-- Zmień dane kontaktowe (telefon, e-mail, lokalizacja)
-- Dodaj własne zdjęcia produktów
-- Dostosuj kolory i style w sekcji `<style>`
+```bash
+pnpm build
+pnpm start
+```
